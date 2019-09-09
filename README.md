@@ -71,6 +71,8 @@ I would like to acknowledge, this project is totally based on **@beaucarnes** tu
 - I can retrieve a full exercise log of any user by getting /api/exercise/log with a parameter of username.
 - I can retrieve part of the log of any user by also passing along optional parameters of from & to or limit. (Date format dd-mm-yyyy, limit = int)
 
+#### App demo https://pgt-exercise-tracker.herokuapp.com/
+
 ## Author
 
 - [avatarfreak](https://github.com/avatarfreak "avatarfreak")
