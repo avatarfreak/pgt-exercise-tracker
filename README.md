@@ -4,34 +4,40 @@
 
 ```
 Project
-|
-└───backend
-|   └───src
-|       └───models
-|           └───exerciseModels.js
-|           └───userModel.js
-|
-|       └───routes
-|           └───exercise.js
-|           └───users.js
-|
-└───client
-|   └───dist
-|   └───public
-|       └───index.html
-│   └───src
-│       └───components
-│            └───CreateExercise.js
-|            └───CreateUser.js
-|            └───EditExercise.js
-|            └───Footer.js
-|            └───NavBar.js
-|            └───toggle.js
-|
-│       └───App.js
-│       └───index.js
-│
-└───README.md
+├── client
+│   ├── package.json
+│   ├── package-lock.json
+│   ├── public
+│   │   ├── favicon.ico
+│   │   ├── index.html
+│   │   └── manifest.json
+│   ├── README.md
+│   └── src
+│       ├── App.js
+│       ├── components
+│       │   ├── CreateExercise.js
+│       │   ├── CreateUser.js
+│       │   ├── EditExercise.js
+│       │   ├── ExercisesList.js
+│       │   ├── Footer.js
+│       │   ├── NavBar.js
+│       │   └── toggle.js
+│       ├── index.js
+│       └── logo.png
+├── package.json
+├── package-lock.json
+├── Procfile
+├── README.md
+├── server.js
+└── src
+    ├── models
+    │   ├── exerciseModel.js
+    │   └── userModel.js
+    └── routes
+        ├── exercises.js
+        ├── index.js
+        └── users.js
+
 ```
 
 ## Disclosure
@@ -46,8 +52,6 @@ The technologies used for this project
   - **Mongodb Atlas**
 - Style
   - **Bulma css**
-
-This project is built from scratch and powered by webpack4 and babel for modern js.
 
 I would like to acknowledge, this project is totally based on **@beaucarnes** tutorial. Below is the link to video tutorial and to the articles.
 
