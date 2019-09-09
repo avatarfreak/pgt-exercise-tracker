@@ -45,10 +45,8 @@ export class ExercisesList extends Component {
     axios
       .get("/api/exercises/")
       .then(res => {
-        console.log(res.data);
-        let newExercises = this.state.exercises.concat(res.data);
         this.setState({
-          exercises: newExercises
+          exercises: res.data
         });
       })
       .catch(err => console.log(err));

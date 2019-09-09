@@ -20,17 +20,11 @@ connection.once("open", () =>
   console.log("Database connection established succesfully")
 );
 
-
-
-//production mode
-  // Set static folder
-  app.use(express.static(path.join(__dirname, "client", "build")));
-
-  
-
+// Set static folder
+app.use(express.static(path.join(__dirname, "client", "build")));
 
 //Routes api
-const routes = require("./src/routes/index")
+const routes = require("./src/routes/index");
 app.use(routes);
 
 const PORT = process.env.PORT || 5000;
