@@ -7,7 +7,7 @@ router.use("/api/users", users);
 
 // If no API routes are hit, send the React app
  router.get("*", (req, res) => {
-    res.sendFile(path.resolve(__dirname, "client", "build", "index.html"));
+    res.sendFile(path.resolve(__dirname, "frontend", "dist", "index.html"));
   });
   
 module.exports = router;

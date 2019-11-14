@@ -20,9 +20,8 @@ connection.once("open", () =>
   console.log("Database connection established succesfully")
 );
 
-// Set static folder
-app.use(express.static(path.join(__dirname, "client", "build")));
-
+//Set static folder
+app.use(express.static(path.join(__dirname, "frontend", "dist")));
 //Routes api
 const routes = require("./src/routes/index");
 app.use(routes);
